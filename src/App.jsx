@@ -1,14 +1,27 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import HomePage from './pages/HomePage';
 
 export default function App() {
+  // slicing
+  // const slicing = true;
+  // if (slicing) {
+  //   return <LoginPage />;
+  // }
+
+  // protected route
+  const authUser = null;
+  if (authUser === null) {
+    return <LoginPage />;
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-900">
-      <div className="w-full max-w-lg rounded-lg border-t border-gray-600 bg-gray-800 p-6 shadow">
-        <h4 className="text-2xl text-white">Hello gais</h4>
-        <p className="text-lg leading-relaxed text-gray-400">
-          Ini projek e-commerce
-        </p>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
   );
 }
