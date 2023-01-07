@@ -12,10 +12,10 @@ export default function App() {
   // }
 
   // protected route
-  const authUser = null;
-  if (authUser === null) {
-    return <LoginPage />;
-  }
+  // const authUser = null;
+  // if (authUser === null) {
+  //   return <LoginPage />;
+  // }
 
   return (
     <Routes>

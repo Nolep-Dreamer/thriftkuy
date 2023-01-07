@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import illustration1 from '/assets/illustration1.png';
 
 export default function LoginPage() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            cupiditate adipisci odio distinctio, enim earum possimus numquam
-            vero autem! Distinctio minus exercitationem, nobis corporis deserunt
-            nesciunt quidem praesentium obcaecati laudantium?
+        <div className="text-center">
+          <h1 className="text-4xl font-bold">Login now!</h1>
+          <p className="mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            enim.
           </p>
+          <img src={illustration1} alt="" width={650} />
         </div>
         <div className="card w-full max-w-sm flex-shrink-0 bg-base-100 shadow-2xl">
           <div className="card-body">
